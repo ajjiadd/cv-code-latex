@@ -1,0 +1,124 @@
+% Setting up the document class for a stylish CV
+\documentclass[11pt,a4paper]{article}
+
+% Including necessary packages for formatting and layout
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+\usepackage[sfdefault]{roboto}
+
+% Defining colors for styling
+\definecolor{headercolor}{RGB}{0, 102, 204}
+\definecolor{underlinecolor}{RGB}{0, 153, 255}
+
+% Configuring page margins for a clean look
+\geometry{left=1.2cm, right=1.2cm, top=1.5cm, bottom=1.5cm}
+
+% Customizing section headings with underline
+\titleformat{\section}
+  {\large\bfseries\color{headercolor}}
+  {}
+  {0em}
+  {\MakeUppercase}[\color{underlinecolor}\titlerule]
+
+% Customizing itemize for compact lists
+\setlist[itemize]{leftmargin=*, itemsep=0pt, topsep=2pt}
+
+% Removing default page numbers
+\pagestyle{empty}
+
+% Customizing hyperlink colors
+\hypersetup{
+    colorlinks=true,
+    linkcolor=headercolor,
+    urlcolor=headercolor,
+}
+
+% Starting the document
+\begin{document}
+
+% Adding stylish header with personal information
+\begin{center}
+    {\Huge \textbf{Abdullah Al Jiad}} \\[0.2cm]
+    {\small
+    \faEnvelope \ \href{mailto:ajjiad.cse@gmail.com}{ajjiad.cse@gmail.com} \ $|$ 
+    \faPhone \ 01996675960, 01952672121 \ $|$ 
+    \faMapMarkerAlt \ Daffodil Smart City, Ashulia, Savar \\[0.1cm]
+    \faGithub \ \href{https://github.com/ajjiadd}{github.com/ajjiadd} \ $|$ 
+    \faGlobe \ \href{https://ajjiadd.github.io/personal-web/}{ajjiadd.github.io/personal-web}
+    }
+\end{center}
+
+% Objective section
+\section{Objective}
+Motivated Computer Science and Engineering student seeking a challenging role in software development to apply my programming skills, problem-solving abilities, and passion for creating innovative solutions.
+
+% Education section
+\section{Education}
+\textbf{Daffodil International University} \hfill Dhaka, Bangladesh \\
+B.Sc. in Computer Science and Engineering, 3rd Year \hfill Ongoing \\[0.2cm]
+\textbf{Sujat Ali Honours College} \hfill 2021 \\
+HSC, Science \hfill Dhaka Board \\[0.2cm]
+\textbf{Pingna High School} \hfill 2019 \\
+SSC, Science \hfill Dhaka Board
+
+% Skills section
+\section{Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages}: C, Python, Java, JavaScript
+    \item \textbf{Frameworks \& Tools}: Node.js, Express, Tailwind CSS
+    \item \textbf{Databases}: MySQL (Proficient), MongoDB (Basic)
+    \item \textbf{Technical Skills}: Git, Linux, Graphic Design, Photo Editing, Video Editing
+    \item \textbf{Soft Skills}: Teamwork, Communication, Problem Solving
+\end{itemize}
+
+% Projects section
+\section{Projects}
+\textbf{E-commerce Website} \hfill \href{https://github.com/ajjiadd}{GitHub} \\
+Developed a fully functional e-commerce platform with user authentication and product management. \\
+\textit{Technologies}: HTML, Tailwind CSS, JavaScript, Express, MySQL \\
+\textit{Role}: Designed frontend and backend, implemented database integration \\[0.2cm]
+\textbf{Portfolio Website} \hfill \href{https://github.com/ajjiadd}{GitHub} \\
+Created a personal portfolio to showcase skills and projects with a responsive design. \\
+\textit{Technologies}: HTML, CSS, JavaScript \\
+\textit{Role}: Sole developer, focused on UI/UX and responsiveness \\[0.2cm]
+\textbf{Ticket Buying System} \hfill \href{https://github.com/ajjiadd}{GitHub} \\
+Built an online ticket purchasing system with secure payment integration. \\
+\textit{Technologies}: HTML, Tailwind CSS, JavaScript, Express, MySQL \\
+\textit{Role}: Developed frontend and backend, ensured smooth user experience \\[0.2cm]
+\textbf{Airline Management System} \hfill \href{https://github.com/ajjiadd}{GitHub} \\
+Designed a system for managing airline schedules, bookings, and customer data. \\
+\textit{Technologies}: Java \\
+\textit{Role}: Implemented core functionalities and database operations
+
+% Experience section
+\section{Experience}
+\textbf{SYLAXX, Founder} \hfill Dhaka, Bangladesh \\
+Founded and managed an e-commerce startup specializing in sarees and jewelry, delivering high-quality products to customers. \\
+\begin{itemize}
+    \item Led the development of an online platform for product showcasing and sales.
+    \item Designed marketing strategies, increasing brand visibility and customer engagement by 30\%.
+    \item Managed inventory, vendor relationships, and technical operations to ensure seamless business processes.
+\end{itemize}
+
+% Languages section
+\section{Languages}
+\begin{itemize}
+    \item Bangla (Fluent)
+    \item English (Fluent)
+\end{itemize}
+
+% Hobbies section
+\section{Hobbies}
+\begin{itemize}
+    \item Photo Editing
+    \item Video Editing
+\end{itemize}
+
+% Ending the document
+\end{document}
